@@ -1,102 +1,263 @@
-.row + .row {
-  margin-top: 16px;
-}
+// .row + .row {
+//   margin-top: 16px;
+// }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
+// .row > .col,
+// .row > [class^="col-"] {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   background-color: rgba(86, 61, 124, 0.15);
+//   border: 1px solid rgba(86, 61, 124, 0.2);
+// }
 
 // .news-grid {
 // }
+.conflit-title {
+  color: #414141;
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
 
-// .news-card {
-//   padding-top: 30px;
-//   margin: auto;
-//   width: 386px;
-//   height: 399px;
-// }
+.featured-title {
+  color: #414141;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-// .news-card img {
-//   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 4.98%, #000 89.13%);
-// }
+.button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 90px;
+}
 
-// .card-element {
-//   position: absolute;
-//   color: #000000;
-//   font-family: Open Sans;
-//   font-style: normal;
-//   padding-top: 250px;
-//   padding-left: 20px;
-// }
+.view-all-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 1px solid #000;
+}
 
-// .label {
-//   width: 102.581px;
-//   height: 18.25px;
-//   flex-shrink: 0;
-//   background: #e41e13;
-// }
+.view-all-btn p {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
 
-// .label p {
-//   color: #fff;
-//   text-align: center;
-//   font-family: Open Sans;
-//   font-size: 11px;
-//   font-style: normal;
-//   font-weight: 600;
-//   line-height: normal;
-// }
+.news-card-featured img {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: auto;
+}
 
-// .date {
-//   color: #fff;
-//   font-family: Open Sans;
-//   padding-top: 10px;
-//   font-size: 10px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: normal;
-// }
+.news-card-stretch img {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: auto;
+}
 
-// .title {
-//   color: #fff;
-//   font-family: Open Sans;
-//   padding-top: 10px;
-//   font-size: 18px;
-//   font-style: normal;
-//   font-weight: 600;
-//   line-height: 30px;
-// }
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: lightblue;
+  }
+  .news-card-stretch img {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 500px;
+  }
+  .news-card-featured img {
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    width: auto;
+  }
+}
 
-// .author {
-//   color: #6b6b6b;
-//   font-family: Open Sans;
-//   font-size: 10px;
-//   padding-top: 10px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: normal;
-// }
+@media only screen and (max-width: 769px) {
+  .fire-new {
+    display: none;
+  }
+}
 
-// .second-post {
-//   padding-top: 30px;
-//   margin: auto;
-//   width: 386px;
-//   height: 399px;
-// }
-// .second-post img {
-//   padding-top: 20px;
-// }
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: rgb(46, 122, 148);
+  }
+  .news-card-stretch img {
+    display: flex;
+    justify-content: center;
+    height: 260px;
+    width: 700px;
+  }
+  .news-card-featured img {
+    display: flex;
+    justify-content: center;
+    height: 95vh;
+    width: auto;
+  }
+}
+.news-card-stretch {
+  padding-bottom: 24px;
+}
 
-// .third-post {
-//   padding-top: 30px;
-//   margin: auto;
-//   width: 386px;
-//   height: 399px;
-// }
+.news-card-featured {
+  padding-bottom: 24px;
+}
 
-// .third-post img {
-//   padding-top: 40px;
-// }
+.comment-element img {
+  position: relative;
+  width: auto;
+  height: 2vh;
+  padding-left: 350px;
+  bottom: 10px;
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+
+@media only screen and (min-width: 769px) {
+  .comment-element img {
+    position: relative;
+    width: auto;
+    height: 2vh;
+    padding-left: 283px;
+    bottom: 13px;
+    padding-top: 5px;
+    flex-shrink: 0;
+  }
+}
+
+.card-element {
+  position: absolute;
+  color: #000000;
+  font-family: Open Sans;
+  font-style: normal;
+  padding-top: 295px;
+  padding-left: 15px;
+}
+
+.card-element-featured {
+  position: absolute;
+  color: #000000;
+  font-family: Open Sans;
+  font-style: normal;
+  padding-top: 295px;
+  padding-left: 15px;
+}
+
+@media only screen and (min-width: 769px) {
+  .card-element {
+    position: absolute;
+    color: #000000;
+    font-family: Open Sans;
+    font-style: normal;
+    padding-top: 47px;
+    padding-left: 15px;
+  }
+
+  .card-element-featured {
+    position: absolute;
+    color: #000000;
+    font-family: Open Sans;
+    font-style: normal;
+    padding-top: 515px;
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card-element-featured {
+    position: absolute;
+    color: #000000;
+    font-family: Open Sans;
+    font-style: normal;
+    padding-top: 695px;
+    padding-left: 15px;
+  }
+
+  .card-element {
+    position: absolute;
+    color: #000000;
+    font-family: Open Sans;
+    font-style: normal;
+    padding-top: 104px;
+    padding-left: 15px;
+  }
+}
+
+.label {
+  width: 102.581px;
+  height: 18.25px;
+  flex-shrink: 0;
+  background: #e41e13;
+}
+
+.label p {
+  color: #fff;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.date {
+  color: #fff;
+  font-family: Open Sans;
+  padding-top: 10px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title {
+  color: #fff;
+  font-family: Open Sans;
+  padding-top: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.author {
+  color: #6b6b6b;
+  font-family: Open Sans;
+  font-size: 10px;
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media only screen and (min-width: 769px) {
+  .author {
+    color: #6b6b6b;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
