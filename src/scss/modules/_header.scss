@@ -1,0 +1,36 @@
+.header-post img {
+  width: auto;
+  height: 450;
+  aspect-ratio: 4/1;
+  opacity: 1;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.card-element-header {
+  position: absolute;
+  width: auto;
+  padding-left: 35px;
+  top: 220px;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 769px) {
+  .sub {
+    display: none;
+  }
+
+  .card-element-header {
+    position: absolute;
+    width: auto;
+    padding-left: 35px;
+    top: 290px;
+    flex-shrink: 0;
+  }
+}
+
+.comment-element-header {
+  width: 16.848px;
+  height: 16.848px;
+  flex-shrink: 0;
+}
